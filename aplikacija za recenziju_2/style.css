@@ -1,0 +1,151 @@
+/* Globalni stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Stil forme */
+form {
+    display: flex;         /* Aktivira Flexbox */
+    gap: 15px;  /* Raspoređuje elemente s jednakim razmakom */
+    align-items: flex-end;   /* Poravnava elemente po sredini vertikalno */
+    background: #e6e6e6;   /* Siva pozadina za bolji kontrast */
+    padding: 20px;         /* Razmak unutar boxa */
+    max-width: 600px;      /* Ograničena širina */
+    margin: 20px auto;     /* Centriranje u sredinu */
+}
+
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+input{
+    padding: 10px;        /* Unutarnji razmak */
+    background: none;    /* Bijela pozadina */
+    border: 1.5px solid #b1b1b1; /* Tanki okvir */
+
+
+}
+
+.input-wrapper-1 {
+    flex: 6;              /* Svi elementi zauzimaju isti prostor */
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.input-wrapper-2 {
+    flex: 1;              /* Svi elementi zauzimaju isti prostor */
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;   /* Centrirani tekst */
+}
+
+
+/* Gumb "Pohrani" */
+.pohrani {
+    flex: 3;              /* Svi elementi zauzimaju isti prostor */
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.pohrani:hover {
+    opacity: 0.8;
+}
+
+/* Kontejner recenzija */
+#recenzije {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Stil pojedinačne recenzije */
+.recenzija {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.recenzija strong {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.recenzija .datum {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Gumbi unutar recenzija */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.actions button {
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.actions button:hover {
+    color: #555;
+}
+
+/* Stil za omiljene recenzije */
+.omiljena {
+    color: red;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN - MOBILNI */
+/* ============================= */
+@media (max-width: 768px) {  /* Ovo je ispravno za mobilne uređaje */
+    form {
+        flex-direction: column;  /* Postavlja sve elemente jedan ispod drugog */
+        align-items: stretch;  /* Svi elementi zauzimaju punu širinu */
+    }
+
+
+    .input-wrapper-1,
+    .input-wrapper-2{
+        text-align: left;
+
+    }
+    .input-wrapper-1,
+    .input-wrapper-2,
+    .pohrani {
+        flex: none;  /* Resetira flex raspodjelu */
+        width: 100%;  /* Svaki element zauzima punu širinu */
+    }
+
+    .pohrani {
+        margin-top: 10px;  /* Dodaje razmak između input polja i gumba */
+    }
+}
+
