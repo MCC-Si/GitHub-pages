@@ -1,0 +1,24 @@
+<!DOCTYPE html> <html lang="hr">
+    <head> <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta description="Aplikacija za recenziranje knjiga" />
+        <meta author="Marija" />
+        <title>Aplikacija za recenziranje knjiga</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Aplikacija za recenziju knjiga</h1>
+        <form action="submit" method="get">
+            <label for="bookTitle">Naziv:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required />
+            <label for="rating">Ocjena:</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required />
+            <br />
+            <button type="submit">Pohrani recenziju</button>
+            <br /> <button type="submit">Obriši</button>
+            <br /> <button type="submit">Označi kao favorita</button>
+            <br />
+        </form>
+        <script src="script.js"></script>
+    </body>
+    </html>  

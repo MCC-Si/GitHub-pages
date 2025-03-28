@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  form {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .review {
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .review-title {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .review-meta {
+    color: #666;
+  }
+  
+  .review-actions {
+    text-align: right;
+  }
+  
+  .review-actions a {
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    input {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  @import url("script.js");
+  
