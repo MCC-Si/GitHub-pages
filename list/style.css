@@ -1,0 +1,10 @@
+div {
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    translate: 50px 100px;
+    transform: rotate(75deg);
+    border: 0px solid;
+    border-radius: 75% 0% 75% 0%;
+    }
+    
